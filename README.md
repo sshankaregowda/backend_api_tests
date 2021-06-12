@@ -1,4 +1,4 @@
-# API tests
+# Backend API tests
 
 This is RestAssured framework with Testng and maven built
 Tests cannot be executed because endpoint given is just the sample.
