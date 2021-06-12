@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="bigtincantests">
+<suite name="APItests">
 
     <test name="restapitests" >
 
-        <parameter name="putName" value="Bigtincan"/>
-        <parameter name="putId" value="2"/>
-        <parameter name="postName" value="Bigtincan"/>
-        <parameter name="postId" value="3"/>
+        <parameter name="petName" value="Doggie"/>
+        <parameter name="petId" value="2"/>
+        <parameter name="petName" value="Brownie"/>
+        <parameter name="petId" value="3"/>
 
         <classes  >
-            <class name="tests.DeleteRequest" />
-            <class name="tests.GetIdRequest" />
-            <class name="tests.PutRequest" />
-            <class name="tests.PostRequest"/>
-            <class name="tests.GetRequest"/>
+            <class name="tests.DeletePetRequest" />
+            <class name="tests.GetPetIdRequest" />
+            <class name="tests.PutPetRequest" />
+            <class name="tests.PostPetRequest"/>
         </classes>
     </test>
 

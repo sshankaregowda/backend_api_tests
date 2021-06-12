@@ -5,18 +5,16 @@ Tests cannot be executed because endpoint given is just the sample.
 Tests can be run for valid endpoint
 
 Steps to run
-1. git clone https://github.com/sshankaregowda/Bigtincan.git
+1. git clone https://github.com/sshankaregowda/backend_api_tests.git
 2. open cmd
-3. navigate to project location and run "mvn clean test"
-4. see the results
+3. navigate to project location 
 
 Framework structure:
 
 Base class - contains base url and base path. It also has test case parameters declared using @dataprovider
-DeleteRequest class - deletes the details for specific id
-GetIdRequest class - fetch the details for specific id and print the response
-GetRequest class - fetch the details and print the response
-PostRequest class - post the details 
-PutRequest class - updates the details for specific id
+DeletePetRequest class - deletes the details for specific pet by pet id
+GetPetIdRequest class - fetch the details for specific pet id and print the response
+PostPetRequest class - post the pet details 
+PutPetRequest class - updates the details of pet by pet id
 
 

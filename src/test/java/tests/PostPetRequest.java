@@ -1,5 +1,5 @@
-/*PostRequest.java
-This file is used to post the details
+/*PostPetRequest.java
+This file is used to post the details of pet
  */
 
 package tests;
@@ -14,13 +14,13 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
 
-public class PostRequest extends Base{
+public class PostPetRequest extends Base{
     public static Map<String, String> map = new HashMap<String, String>();
 
     //set post body
-    @Parameters({"postName", "postId"})
+    @Parameters({"petName", "petId"})
     @BeforeTest
-    public void postdata(String name, String id) {
+    public void postPetData(String name, String id) {
 
         map.put("name", name);
         map.put("id", id);

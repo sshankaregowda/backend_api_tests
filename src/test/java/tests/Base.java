@@ -1,6 +1,6 @@
 /*Base.java
 This file is used to load the Base URL and Base Path for each test case
-This file contains id parameters
+This file contains pet id parameters
  */
 
 
@@ -17,14 +17,14 @@ public class Base {
     @BeforeClass
     public void beforeClass() {
 
-        RestAssured.baseURI = "api.bigtincan.org";
-        RestAssured.basePath = "/stories";
+        RestAssured.baseURI = "petstore.swagger.io/v2";
+        RestAssured.basePath = "/pet";
 
     }
 
     //setting id parameters
     @DataProvider(name = "id")
-    public Object[][] createidTestData() {
+    public Object[][] createPetIdTestData() {
 
         return new Object[][]{
                 {"2"},

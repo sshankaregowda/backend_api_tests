@@ -1,5 +1,5 @@
-/*PutRequest.java
-This file is used to update the details
+/*PutPetRequest.java
+This file is used to update the details of pet
  */
 
 package tests;
@@ -14,14 +14,14 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
 
-public class PutRequest extends Base{
+public class PutPetRequest extends Base{
 
     public static Map<String,String> map = new HashMap<String,String>();
 
     //set the put body
-    @Parameters({ "putName","putId" })
+    @Parameters({ "petName","petId" })
     @BeforeTest
-    public void putdata(String name,String id){
+    public void putPetdata(String name,String id){
 
           map.put("name",name);
           map.put("id",id);
@@ -36,7 +36,7 @@ public class PutRequest extends Base{
                 .contentType("application/json")
                 .body(map)
                 .when()
-                .put("/{id}",id)
+                .put("/{petId}",id)
                 .then()
                 .statusCode(200)
                 .assertThat()

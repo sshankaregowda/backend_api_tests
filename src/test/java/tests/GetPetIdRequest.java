@@ -1,5 +1,5 @@
-/*GetIdRequest.java
-This file is used to get the details for specific id
+/*GetPetIdRequest.java
+This file is used to get the details of pet by pet id
  */
 
 package tests;
@@ -13,15 +13,15 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
 
-public class GetIdRequest extends Base {
+public class GetPetIdRequest extends Base {
 
-    //get details for id
+    //get details for pet by petId
     @Test(dataProvider = "id")
-    public void getIdApi(String id) {
+    public void getPetIdApi(String id) {
 
         given()
                 .when()
-                .get("/{id}", id)
+                .get("/{petId}", id)
                 .then()
                 .statusCode(200)
                 .assertThat()
@@ -35,7 +35,7 @@ public class GetIdRequest extends Base {
 
                 given()
                         .when()
-                        .get("/{id}", id).
+                        .get("/{petId}", id).
                         then().
                         contentType(ContentType.JSON).
                         extract().response();
