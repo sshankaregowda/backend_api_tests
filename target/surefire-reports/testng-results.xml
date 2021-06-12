@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="bigtincantests" duration-ms="8275" started-at="2018-08-12T22:57:33Z" finished-at="2018-08-12T22:57:41Z">
+    <groups>
+    </groups>
+    <test name="restapitests" duration-ms="8275" started-at="2018-08-12T22:57:33Z" finished-at="2018-08-12T22:57:41Z">
+      <class name="tests.PutRequest">
+        <test-method status="PASS" signature="postdata(java.lang.String, java.lang.String)[pri:0, instance:tests.PutRequest@7139bd31]" name="postdata" is-config="true" duration-ms="250" started-at="2018-08-13T08:57:33Z" finished-at="2018-08-13T08:57:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[morpheus]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[zion resident]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postdata -->
+        <test-method status="PASS" signature="putApi()[pri:0, instance:tests.PutRequest@7139bd31]" name="putApi" duration-ms="1154" started-at="2018-08-13T08:57:40Z" finished-at="2018-08-13T08:57:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putApi -->
+      </class> <!-- tests.PutRequest -->
+      <class name="tests.GetIdRequest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.GetIdRequest@21f459fc]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-08-13T08:57:33Z" finished-at="2018-08-13T08:57:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="getIdApi(java.lang.String)[pri:0, instance:tests.GetIdRequest@21f459fc]" name="getIdApi" duration-ms="1719" started-at="2018-08-13T08:57:33Z" data-provider="idvalues" finished-at="2018-08-13T08:57:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getIdApi -->
+        <test-method status="PASS" signature="getIdApi(java.lang.String)[pri:0, instance:tests.GetIdRequest@21f459fc]" name="getIdApi" duration-ms="1004" started-at="2018-08-13T08:57:35Z" data-provider="idvalues" finished-at="2018-08-13T08:57:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getIdApi -->
+        <test-method status="PASS" signature="getIdApi(java.lang.String)[pri:0, instance:tests.GetIdRequest@21f459fc]" name="getIdApi" duration-ms="1064" started-at="2018-08-13T08:57:36Z" data-provider="idvalues" finished-at="2018-08-13T08:57:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getIdApi -->
+        <test-method status="PASS" signature="getresponse(java.lang.String)[pri:0, instance:tests.GetIdRequest@21f459fc]" name="getresponse" duration-ms="1042" started-at="2018-08-13T08:57:37Z" data-provider="idvalues" finished-at="2018-08-13T08:57:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getresponse -->
+        <test-method status="PASS" signature="getresponse(java.lang.String)[pri:0, instance:tests.GetIdRequest@21f459fc]" name="getresponse" duration-ms="975" started-at="2018-08-13T08:57:38Z" data-provider="idvalues" finished-at="2018-08-13T08:57:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getresponse -->
+        <test-method status="PASS" signature="getresponse(java.lang.String)[pri:0, instance:tests.GetIdRequest@21f459fc]" name="getresponse" duration-ms="1056" started-at="2018-08-13T08:57:39Z" data-provider="idvalues" finished-at="2018-08-13T08:57:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getresponse -->
+      </class> <!-- tests.GetIdRequest -->
+    </test> <!-- restapitests -->
+  </suite> <!-- bigtincantests -->
+</testng-results>

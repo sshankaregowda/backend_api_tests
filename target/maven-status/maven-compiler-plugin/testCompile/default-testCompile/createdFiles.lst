@@ -1,0 +1,6 @@
+tests/DeleteRequest.class
+tests/Base.class
+tests/GetIdRequest.class
+tests/PutRequest.class
+tests/PostRequest.class
+tests/GetRequest.class
